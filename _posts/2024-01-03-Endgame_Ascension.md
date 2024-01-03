@@ -1,5 +1,5 @@
 ---
-title: Writeup_FullHouse
+title: Writeup_Ascension
 date: 2024-01-03 11:45:00 +0100
 categories: [HTB, Endgames]
 tags: [dirsearch, proxychains, enum4linux, runas, msfconsole, bloodhount, hashcat, DonPAPI, msfvenom, ssh_port_forwarding, xc-shell, slack-parser, rubeus, sharodapi]
