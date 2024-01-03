@@ -5,6 +5,10 @@ categories: [HTB, Endgames]
 tags: [ligolo-ng, sqsh, chisel, mimikatz, evil-winrm, ncat, sigmapotato, hashcat, smbserver_linux, ilspy, impacket, ffuf]     # TAG names should always be lowercase
 author: bumbl0r
 comments: false
+<author_id>:
+  name: bumbl0r
+  url: <homepage_of_author>
+
 ---
 
 Tools: #fuff , #ligolo-ng , #mimikatz , #evil-winrm , #ncat, #SigmaPotato, #chisel , #sqsh, #hashcat , #smbserver_linux_x86_64, #ilspy , #impacket
