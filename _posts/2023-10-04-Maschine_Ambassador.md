@@ -1,6 +1,6 @@
 ---
 title: Writeup_Ambassador
-date: 2024-01-03 11:45:00 +0100
+date: 2023-10-04 11:45:00 +0100
 categories: [HTB, Maschine]
 tags: [ssh_port_forwarding, msfconsole, searchsploit, mysql, sqllite3]
 comments: false
