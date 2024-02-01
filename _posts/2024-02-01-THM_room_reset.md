@@ -1,5 +1,5 @@
 ---
-title: Writeup_THM_Room_reset
+title: Writeup THM Room reset
 date: 2024-02-01 11:45:00 +0100
 categories: [THM, Room]
 tags: [crackmapexec, ntlm_theft, responder, john, evil-winrm, impacket_GetNPUser, impacket-getST]
@@ -66,7 +66,7 @@ Nmap done: 1 IP address (1 host up) scanned in 57.75 seconds
 
 Tragen wir zuerst die hosts in unsere Hosts Datei ein
 
-![[Pasted image 20240201091156.png]]
+![Bild](/assets/Bilder/THM_reset/Pasted%20image%2020240201091156.png){: width="700" height="400" }
 
 Versuchen wir mal Crackmapexec
 
@@ -309,10 +309,9 @@ Mode                LastWriteTime         Length Name
 
 
 *Evil-WinRM* PS C:\Users\automate\Desktop> type user.txt
-THM{AUTOMATION_WILL_REPLACE_US}
+#######
 ```
 
-User-flag `THM{AUTOMATION_WILL_REPLACE_US}
 
 Nachdem wir nun die User-Flag haben versuche ich Administrator zu werden.
 Hierfür  versuchen ich erstmal mit bloodhount an die AD-Informationen zu kommen
@@ -320,6 +319,7 @@ Hierfür  versuchen ich erstmal mit bloodhount an die AD-Informationen zu kommen
 In Bloodhound sehe folgendes
 
 ![[Pasted image 20240201143116.png]]
+![Bild](/assets/Bilder/THM_reset/Pasted%20image%2020240201143116.png){: width="700" height="400" }
 
 versuchen wir an die Passwörter zu kommen
 
@@ -398,7 +398,8 @@ Schauen wir uns in Bloodhound an was der User so alles kann
 
 Ich finde einen Weg wie ich Administrator werden kann
 
-![[Pasted image 20240201144240.png]]
+
+![Bild](/assets/Bilder/THM_reset/Pasted%20image%2020240201144240.png){: width="700" height="400" }
 
 User TABATHA_BRITT hat Generic All Rechte über SHAWNA_BRAY -> Step1 
 
@@ -408,7 +409,8 @@ CURZ_HALL hat GenericWrite Rechte über DARLA_WINTERS -> Step 3
 
 Bei DARLA_WINTERS angekomme haben wir dann Delegete Rechte -> Step4
 
-![[Pasted image 20240201144405.png]]
+
+![Bild](/assets/Bilder/THM_reset/Pasted%20image%2020240201144405.png){: width="700" height="400" }
 
 Versuchen wir unser Glück
 
@@ -497,9 +499,6 @@ C:\Users\Administrator\Desktop>dir
                2 Dir(s)  12,383,342,592 bytes free
 
 C:\Users\Administrator\Desktop>type root.txt
-THM{RE_RE_RE_SET_AND_DELEGATE}
-C:\Users\Administrator\Desktop>
 
 ```
 
-root Flag `THM{RE_RE_RE_SET_AND_DELEGATE}`
